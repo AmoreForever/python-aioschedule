@@ -8,6 +8,7 @@ $ pip install --upgrade twine wheel
 $ python setup.py sdist bdist_wheel --universal
 $ twine upload dist/*
 """
+
 import codecs
 import os
 import sys
@@ -16,7 +17,7 @@ from setuptools import setup
 
 SCHEDULE_VERSION = '0.5.2'
 SCHEDULE_DOWNLOAD_URL = (
-    'https://github.com/ibrb/python-aioschedule/tarball/' + SCHEDULE_VERSION
+    f'https://github.com/ibrb/python-aioschedule/tarball/{SCHEDULE_VERSION}'
 )
 
 def read_file(filename):
